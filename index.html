@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página en GitHub</title>
+    <title>Invitación de San Valentín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #d63384;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .heart {
+            color: red;
+            font-size: 40px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #d63384;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, GitHub Pages!</h1>
-    <p>Bienvenido a mi sitio web.</p>
+    <div class="card">
+        <h1>💖 ¡Te invito a celebrar San Valentín conmigo! 💖</h1>
+        <p>Será un día especial lleno de amor y momentos inolvidables. 💕</p>
+        <p class="heart">❤</p>
+        <p>¿Aceptas mi invitación?</p>
+        <a href="#" class="button">¡Sí, quiero! 💘</a>
+    </div>
 </body>
 </html>
