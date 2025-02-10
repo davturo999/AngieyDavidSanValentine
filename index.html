@@ -63,16 +63,29 @@
         .button:hover {
             background-color: #d63384;
         }
+        .carousel {
+            display: none;
+            margin-top: 30px;
+        }
+        .carousel img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
     </style>
     <script>
         function showMessage() {
             alert('¡Me haces muy feliz! No puedo esperar para celebrar contigo. 💖');
+            document.getElementById("carousel").style.display = "block";
         }
     </script>
 </head>
 <body>
     <div class="container">
-        <img src="estediamemato.png" alt="Foto 1">
+        <img src="foto1.jpg" alt="Foto 1">
         <div class="card">
             <h1>💖 ¡Te invito a celebrar San Valentín conmigo! 💖</h1>
             <p>Será un día especial lleno de amor y momentos inolvidables. 💕</p>
@@ -80,7 +93,13 @@
             <p>¿Aceptas mi invitación?</p>
             <button class="button" onclick="showMessage()">¡Sí, quiero! 💘</button>
         </div>
-        <img src="los 2.png" alt="Foto 2">
+        <img src="foto2.jpg" alt="Foto 2">
+    </div>
+    <div id="carousel" class="carousel">
+        <p>💖 Momentos hermosos juntos 💖</p>
+        <img src="moment1.jpg" alt="Momento 1">
+        <img src="moment2.jpg" alt="Momento 2">
+        <img src="moment3.jpg" alt="Momento 3">
     </div>
 </body>
 </html>
