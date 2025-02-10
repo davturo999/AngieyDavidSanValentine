@@ -19,6 +19,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: inline-block;
             max-width: 400px;
+            position: relative;
+        }
+        .photos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .photos img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
         }
         h1 {
             font-size: 24px;
@@ -43,19 +55,30 @@
             border-radius: 5px;
             font-weight: bold;
             transition: 0.3s;
+            cursor: pointer;
+            border: none;
         }
         .button:hover {
             background-color: #d63384;
         }
     </style>
+    <script>
+        function showMessage() {
+            alert('¡Me haces muy feliz! No puedo esperar para celebrar contigo. 💖');
+        }
+    </script>
 </head>
 <body>
     <div class="card">
+        <div class="photos">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
         <h1>💖 ¡Te invito a celebrar San Valentín conmigo! 💖</h1>
         <p>Será un día especial lleno de amor y momentos inolvidables. 💕</p>
         <p class="heart">❤</p>
         <p>¿Aceptas mi invitación?</p>
-        <a href="#" class="button">¡Sí, quiero! 💘</a>
+        <button class="button" onclick="showMessage()">¡Sí, quiero! 💘</button>
     </div>
 </body>
 </html>
